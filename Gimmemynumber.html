@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+var userstring = prompt("Please give me a number that is greater than 100");
+var usernum = parseInt(userstring);
+
+while(usernum < 100) {
+  console.log(usernum + " is less than 100, try again you doofus, I can wait all day.");
+  document.write(usernum + " is less than 100, try again you doofus, I can wait all day." + "<br>");
+  var userstring = prompt(usernum + " is less than 100, try again you doofus, I can wait all day.");
+  var usernum = parseInt(userstring);
+}
+console.log(usernum + " is greater than 100! Great job!");
+document.write(usernum + " is greater than 100! Great job!" + "<br>");
+</script>
+  </body>
+</html>

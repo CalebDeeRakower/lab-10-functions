@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+var recurse = 1;
+var min = -3;
+var maxx = 3;
+var randval = 0;
+function randomInRange(min, maxx) {
+min = Math.ceil(min);
+maxx = Math.floor(maxx);
+return Math.floor(Math.random() * (maxx - min) + min);
+}
+
+function randomwalk() {
+if (recurse > 20) return;
+randval = randval + randomInRange(min, maxx);
+console.log(randval + "<br>");
+document.write(randval + "<br>");
+recurse = recurse + 1;
+randomwalk();
+}
+randomwalk();
+</script>
+  </body>
+</html>
